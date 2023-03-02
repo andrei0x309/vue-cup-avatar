@@ -1,0 +1,75 @@
+{
+  "name": "vue-cup-avatar",
+  "version": "0.1.1",
+  "description": "Vue cropper avatar uploader component",
+  "repository": "https://github.com/andrei0x309/vue-cup-avatar",
+  "author": "Andrei O",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "vue3",
+    "vue-3",
+    "vue",
+    "vue-plugin",
+    "windicss",
+    "avatar",
+    "cropper",
+    "uploader"
+  ],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/vue-cup-avatar.umd.js",
+  "module": "./dist/vue-cup-avatar.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-cup-avatar.es.js",
+      "require": "./dist/vue-cup-avatar.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "scripts": {
+    "lint": "eslint --ext .vue --ignore-path .gitignore --fix src",
+    "dev": "vite dev",
+    "preversion": "yarn build",
+    "release": "yarn preversion && yarn config set version-tag-prefix vue-cup-avatar@v &&  yarn config set version-git-message vue-cup-avatar@v%s' && yarn version --patch && yarn postversion",
+    "postversion": "git push && git push --tags && npm publish",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.11",
+    "@vueuse/core": "^9.13.0",
+    "vue": "^3.2.47",
+    "vue-advanced-cropper": "^2.8.8"
+  },
+  "peerDependencies": {
+    "@headlessui/vue": "^1.7.11",
+    "@vueuse/core": "^9.13.0",
+    "vue": "^3.2.47",
+    "vue-advanced-cropper": "^2.8.8"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.29",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/compiler-sfc": "^3.2.47",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "^8.35.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "typescript": "^4.9.5",
+    "unplugin-vue-components": "^0.24.0",
+    "vite": "^4.1.4",
+    "vite-plugin-dts": "^2.0.2",
+    "vite-plugin-fonts": "^0.7.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-windicss": "^1.8.10",
+    "vue-tsc": "^1.2.0",
+    "yarn-upgrade-all": "^0.7.2"
+  }
+}

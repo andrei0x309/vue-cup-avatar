@@ -1,0 +1,19 @@
+{
+  "name": "avatar",
+  "license": "MIT",
+  "private": "true",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:nocheck": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue-cup-avatar": "link:./.."
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  }
+}
