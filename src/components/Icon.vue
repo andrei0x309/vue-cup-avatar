@@ -23,3 +23,5 @@ const props = defineProps({
 
 const symbolId = computed(() => `#${props.name}`)
 </script>
+
+<style scoped></style>

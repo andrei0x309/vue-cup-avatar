@@ -161,3 +161,5 @@ async function onUrlInput() {
 		</div>
 	</section>
 </template>
+
+<style scoped></style>

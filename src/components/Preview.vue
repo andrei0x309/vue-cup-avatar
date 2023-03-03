@@ -33,3 +33,5 @@ defineProps<{
 	status?: 'busy' | 'away' | 'online' | 'offline'
 }>()
 </script>
+
+<style scoped></style>

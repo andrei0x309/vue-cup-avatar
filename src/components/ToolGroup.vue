@@ -16,3 +16,5 @@ defineProps<{
 	keep?: boolean
 }>()
 </script>
+
+<style scoped></style>

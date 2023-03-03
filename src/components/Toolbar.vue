@@ -31,3 +31,5 @@ function description(tool: Tool) {
 		</tool-group>
 	</aside>
 </template>
+
+<style scoped></style>

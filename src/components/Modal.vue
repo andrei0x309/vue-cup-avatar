@@ -43,3 +43,5 @@ defineProps({ show: Boolean })
     </Dialog>
   </TransitionRoot>
 </template>
+
+<style scoped></style>

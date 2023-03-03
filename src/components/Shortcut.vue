@@ -30,3 +30,5 @@ const name = (key: string) => {
 	return map[key] ?? key
 }
 </script>
+
+<style scoped></style>
