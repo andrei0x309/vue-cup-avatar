@@ -16,7 +16,6 @@ The component will open the cropper in full page mode modal.
 ```javascript
 <script setup lang="ts">
 import { VACropper } from 'vue-cup-avatar'
-import 'vue-advanced-cropper/dist/style.css'
 import 'vue-cup-avatar/dist/style.css'
 
 const yourUploadFunction = (data: Blob) => {

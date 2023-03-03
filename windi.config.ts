@@ -19,17 +19,13 @@ export default defineConfig({
 		boxShadow: {
 			toolbar: '0 4px 16px 0 rgba(0,0,0,.6)',
 		},
-		fontFamily: {
-			sans: ['Inter'],
-		},
 		scale: {
 			flip: '-1',
 		},
 	},
-	extract:{
+	extract: {
 		include: [
-			'index.html',
 			'src/**/*.{vue,html,jsx,tsx}',
-		  ],
+		],
 	}
 })

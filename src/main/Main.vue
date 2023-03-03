@@ -78,9 +78,6 @@ useEventListener(window, 'paste', (paste: ClipboardEvent) => {
 		<image-form v-bind="fromProps" />
 		<modal :show="!shouldBeShown">
 			<section class="flex flex-col items-center h-full">
-				<!-- <div class="hidden w-full p-10 md:block">
-				<shortcut-popover-button />
-			</div> -->
 				<cropper />
 				<section class="flex flex-col items-center flex-shrink-0 w-full px-6">
 					<toolbar />
