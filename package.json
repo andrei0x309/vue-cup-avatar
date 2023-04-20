@@ -37,7 +37,7 @@
     "lint": "eslint --ext .vue --ignore-path .gitignore --fix src",
     "dev": "vite dev",
     "preversion": "yarn build",
-    "release": "yarn preversion && yarn config set version-tag-prefix vue-cup-avatar@v &&  yarn config set version-git-message vue-cup-avatar@v%s' && yarn version --patch && yarn postversion",
+    "release": "yarn preversion && yarn config set version-tag-prefix vue-cup-avatar@v &&  yarn config set version-git-message vue-cup-avatar@v%s' && yarn version --patch",
     "postversion": "git push && git push --tags && npm publish",
     "build": "vite build"
   },

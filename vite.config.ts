@@ -16,7 +16,9 @@ export default defineConfig({
 	},
 	plugins: [
 		vue(),
-		windi(),
+		windi({
+			preflight: false
+		}),
 		Components({
 			dts: true,
 		}),
