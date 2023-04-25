@@ -1,6 +1,6 @@
 {
   "name": "vue-cup-avatar",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Vue cropper avatar uploader component",
   "repository": "https://github.com/andrei0x309/vue-cup-avatar",
   "author": "Andrei O",
@@ -11,7 +11,7 @@
     "vue-3",
     "vue",
     "vue-plugin",
-    "windicss",
+    "tailwindcss",
     "avatar",
     "cropper",
     "uploader"
@@ -60,15 +60,17 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/compiler-sfc": "^3.2.47",
     "@vue/eslint-config-typescript": "^11.0.2",
+    "autoprefixer": "^10.4.14",
     "eslint": "^8.35.0",
     "eslint-plugin-vue": "^9.9.0",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.1",
     "typescript": "^4.9.5",
     "unplugin-vue-components": "^0.24.0",
     "vite": "^4.1.4",
     "vite-plugin-dts": "^2.0.2",
     "vite-plugin-fonts": "^0.7.0",
     "vite-plugin-svg-icons": "^2.0.1",
-    "vite-plugin-windicss": "^1.8.10",
     "vue-tsc": "^1.2.0",
     "yarn-upgrade-all": "^0.7.2"
   }
