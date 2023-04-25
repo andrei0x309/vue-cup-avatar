@@ -1,6 +1,6 @@
-import type { App } from 'vue'
 import './index.css'
 import 'virtual:svg-icons-register'
+import type { App } from 'vue'
 import { VACropper } from './index'
 
 export default {
