@@ -1,5 +1,4 @@
 import path from 'node:path'
-import windi from 'vite-plugin-windicss'
 import Components from 'unplugin-vue-components/vite'
 // import fonts from 'vite-plugin-fonts'
 import vue from '@vitejs/plugin-vue'
@@ -16,9 +15,6 @@ export default defineConfig({
 	},
 	plugins: [
 		vue(),
-		windi({
-			preflight: false
-		}),
 		Components({
 			dts: true,
 		}),

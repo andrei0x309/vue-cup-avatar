@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import 'virtual:windi.css'
+import './index.css'
 import 'virtual:svg-icons-register'
 import { VACropper } from './index'
 

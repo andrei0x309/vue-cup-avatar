@@ -1,6 +1,6 @@
 {
   "name": "vue-cup-avatar",
-  "version": "0.1.6",
+  "version": "0.1.5",
   "description": "Vue cropper avatar uploader component",
   "repository": "https://github.com/andrei0x309/vue-cup-avatar",
   "author": "Andrei O",
@@ -11,7 +11,7 @@
     "vue-3",
     "vue",
     "vue-plugin",
-    "tailwindcss",
+    "tailwind",
     "avatar",
     "cropper",
     "uploader"
