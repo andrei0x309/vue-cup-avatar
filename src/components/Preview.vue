@@ -6,17 +6,17 @@
 			:height="height"
 			:image="state.crop.image"
 			:coordinates="state.crop.coordinates"
-			class="rounded-full"
+			class="twvac-rounded-full"
 		/>
 
 		<div
 			v-if="state.crop && width <= 40 && height <= 40"
-			class="absolute w-2.5 h-2.5 rounded-full bottom-0 right-0 ring ring-gray-900"
+			class="twvac-absolute twvac-w-2.5 twvac-h-2.5 twvac-rounded-full twvac-bottom-0 twvac-right-0 twvac-ring twvac-ring-gray-900"
 			:class="{
-				'bg-yellow-400': status === 'away',
-				'bg-red-400': status === 'busy',
-				'bg-gray-400': status === 'offline',
-				'bg-green-400': status === 'online',
+				'twvac-bg-yellow-400': status === 'away',
+				'twvac-bg-red-400': status === 'busy',
+				'twvac-bg-gray-400': status === 'offline',
+				'twvac-bg-green-400': status === 'online',
 			}"
 		/>
 	</div>

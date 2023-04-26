@@ -1,27 +1,24 @@
 <template>
   <svg aria-hidden="true">
-    <use
-      :xlink:href="symbolId"
-      :fill="color"
-    />
+    <use :xlink:href="symbolId" :fill="color" />
   </svg>
 </template>
 
 <script setup lang="ts">
-import { computed, defineProps } from 'vue'
+import { computed, defineProps } from "vue";
 
 const props = defineProps({
-	name: {
-		type: String,
-		required: true,
-	},
-	color: {
-		type: String,
-		default: 'currentColor',
-	},
-})
+  name: {
+    type: String,
+    required: true,
+  },
+  color: {
+    type: String,
+    default: "currentColor",
+  },
+});
 
-const symbolId = computed(() => `#${props.name}`)
+const symbolId = computed(() => `#${props.name}`);
 </script>
 
 <style scoped></style>

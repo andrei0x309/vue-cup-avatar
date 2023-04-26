@@ -1,9 +1,9 @@
 <template>
-	<div class="flex space-x-1">
+	<div class="twvac-flex twvac-space-x-1">
 		<div
 			v-for="part in parts"
 			:key="part"
-			class="rounded-md bg-gray-700 px-2 py-1 text-xs capitalize font-medium text-gray-200"
+			class="twvac-rounded-md twvac-bg-gray-700 twvac-px-2 twvac-py-1 twvac-text-xs twvac-capitalize twvac-font-medium twvac-text-gray-200"
 			v-text="name(part)"
 		/>
 	</div>

@@ -77,16 +77,12 @@ useEventListener(window, 'paste', (paste: ClipboardEvent) => {
 	<div id="vue-cup-avatar">
 		<image-form v-bind="fromProps" />
 		<modal :show="!shouldBeShown">
-			<section class="flex flex-col items-center h-full">
+			<section class="twvac-flex twvac-flex-col twvac-items-center twvac-h-full">
 				<cropper />
-				<section class="flex flex-col items-center flex-shrink-0 w-full px-6">
+				<section class="twvac-flex twvac-flex-col twvac-items-center twvac-flex-shrink-0 twvac-w-full twvac-px-6">
 					<toolbar />
 				</section>
 			</section>
 		</modal>
 	</div>
 </template>
-
-<style class="scss">
-
-</style>

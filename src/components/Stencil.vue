@@ -86,15 +86,15 @@ function onResizeEnd() {
 </script>
 
 <template>
-	<div class="absolute border border-pink-200 border-dashed" :style="style">
+	<div class="twvac-absolute twvac-border twvac-border-pink-200 twvac-border-dashed" :style="style">
 		<!-- Inner circle -->
-		<div class="absolute inset-0 z-10 border border-pink-200 border-dashed rounded-full pointer-events-none" />
+		<div class="twvac-absolute twvac-inset-0 twvac-z-10 twvac-border twvac-border-pink-200 twvac-border-dashed twvac-rounded-full twvac-pointer-events-none" />
 
 		<!-- Stencil components -->
-		<div class="relative w-full h-full">
+		<div class="twvac-relative twvac-w-full twvac-h-full">
 			<!-- Top right drag -->
 			<draggable-element
-				class="absolute top-0 right-0 w-1/2 h-1/2"
+				class="twvac-absolute twvac-top-0 twvac-right-0 twvac-w-1/2 twvac-h-1/2"
 				style="cursor: ne-resize;"
 				@drag="onResize($event, 'top-right')"
 				@drag-end="onResizeEnd"
@@ -102,7 +102,7 @@ function onResizeEnd() {
 
 			<!-- Top left drag -->
 			<draggable-element
-				class="absolute top-0 left-0 w-1/2 h-1/2"
+				class="twvac-absolute twvac-top-0 twvac-left-0 twvac-w-1/2 twvac-h-1/2"
 				style="cursor: nw-resize;"
 				@drag="onResize($event, 'top-left')"
 				@drag-end="onResizeEnd"
@@ -110,7 +110,7 @@ function onResizeEnd() {
 
 			<!-- Bottom right drag -->
 			<draggable-element
-				class="absolute bottom-0 right-0 w-1/2 h-1/2"
+				class="twvac-absolute twvac-bottom-0 twvac-right-0 twvac-w-1/2 twvac-h-1/2"
 				style="cursor: nw-resize;"
 				@drag="onResize($event, 'bottom-right')"
 				@drag-end="onResizeEnd"
@@ -118,16 +118,16 @@ function onResizeEnd() {
 
 			<!-- Bottom left drag -->
 			<draggable-element
-				class="absolute bottom-0 left-0 w-1/2 h-1/2"
+				class="twvac-absolute twvac-bottom-0 twvac-left-0 twvac-w-1/2 twvac-h-1/2"
 				style="cursor: ne-resize;"
 				@drag="onResize($event, 'bottom-left')"
 				@drag-end="onResizeEnd"
 			/>
 
 			<!-- Move area and preview -->
-			<draggable-area class="cursor-move" @move="onMove" @move-end="onMoveEnd">
+			<draggable-area class="twvac-cursor-move" @move="onMove" @move-end="onMoveEnd">
 				<stencil-preview
-					class="overflow-hidden rounded-full cursor-move"
+					class="twvac-overflow-hidden twvac-rounded-full twvac-cursor-move"
 					:image="image"
 					:coordinates="coordinates"
 					:width="stencilCoordinates.width"

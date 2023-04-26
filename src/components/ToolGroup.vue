@@ -1,7 +1,7 @@
 <template>
-	<div class="flex-col" :class="!keep ? 'sm:hidden md:flex' : 'flex'">
-		<span v-if="name" class="text-sm font-bold text-gray-500 mb-1" v-text="name" />
-		<div class="flex items-center -ml-1" :class="wrapper">
+	<div class="twvac-flex-col" :class="!keep ? 'sm:twvac-hidden md:twvac-flex' : 'twvac-flex'">
+		<span v-if="name" class="twvac-text-sm twvac-font-bold twvac-text-gray-500 twvac-mb-1" v-text="name" />
+		<div class="twvac-flex twvac-items-center -twvac-ml-1" :class="wrapper">
 			<slot />
 		</div>
 	</div>

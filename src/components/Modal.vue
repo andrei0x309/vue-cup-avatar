@@ -12,31 +12,31 @@ defineProps({ show: Boolean })
     :show="show"
   >
     <Dialog
-      class="fixed inset-0 z-10 flex items-center justify-center overflow-y-auto"
+      class="twvac-fixed twvac-inset-0 twvac-z-10 twvac-flex twvac-items-center twvac-justify-center twvac-overflow-y-auto"
       :open="show"
       @close="$emit('close')"
     >
       <TransitionChild
-        enter="transition ease-out duration-300"
-        enter-from="opacity-0"
-        enter-to="opacity-100"
-        leave="transition ease-in duration-200"
-        leave-from="opacity-100"
-        leave-to="opacity-0"
+        enter="twvac-transition twvac-ease-out twvac-duration-300"
+        enter-from="twvac-opacity-0"
+        enter-to="twvac-opacity-100"
+        leave="twvac-transition twvac-ease-in twvac-duration-200"
+        leave-from="twvac-opacity-100"
+        leave-to="twvac-opacity-0"
       >
-        <DialogOverlay class="fixed inset-0 bg-gray-900 opacity-95" />
+        <DialogOverlay class="twvac-fixed twvac-inset-0 twvac-bg-gray-900 twvac-opacity-95" />
       </TransitionChild>
 
       <TransitionChild
         as="template"
-        enter="transition ease-out transform duration-300"
-        enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-        enter-to="opacity-100 translate-y-0 sm:scale-100"
-        leave="transition ease-in transform duration-200"
-        leave-from="opacity-100 translate-y-0 sm:scale-100"
-        leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        enter="twvac-transition twvac-ease-out twvac-transform twvac-duration-300"
+        enter-from="twvac-opacity-0 twvac-translate-y-4 sm:twvac-translate-y-0 sm:twvac-scale-95"
+        enter-to="twvac-opacity-100 twvac-translate-y-0 sm:twvac-scale-100"
+        leave="twvac-transition twvac-ease-in twvac-transform twvac-duration-200"
+        leave-from="twvac-opacity-100 twvac-translate-y-0 sm:twvac-scale-100"
+        leave-to="twvac-opacity-0 translate-y-4 sm:twvac-translate-y-0 sm:twvac-scale-95"
       >
-        <div class="relative z-10 flex justify-center w-full p-8 text-gray-100 flex flex-col">
+        <div class="twvac-relative twvac-z-10 twvac-flex twvac-justify-center twvac-w-full twvac-p-8 twvac-text-gray-100 twvac-flex-col">
           <slot />
         </div>
       </TransitionChild>

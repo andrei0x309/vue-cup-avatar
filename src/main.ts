@@ -1,4 +1,4 @@
-import './index.css'
+import './index.scss'
 import 'virtual:svg-icons-register'
 import type { App } from 'vue'
 import { VACropper } from './index'

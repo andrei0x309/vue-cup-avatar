@@ -1,11 +1,12 @@
 <template>
   <button
+    style="border: 2px;"
     :class="[
-      'p-1 flex items-center justify-center',
-      'transition',
-      'rounded-full',
-      'text-gray-500 hover:text-pink-600',
-      'focus:outline-none dark:focus-visible:text-pink-300 dark:focus-visible:bg-pink-400 focus-visible:text-pink-600 focus-visible:bg-pink-700 focus-visible:bg-opacity-15'
+      'twvac-p-1 twvac-flex twvac-items-center twvac-justify-center',
+      'twvac-transition',
+      'twvac-rounded-full',
+      'twvac-text-gray-500 hover:twvac-text-pink-600',
+      'focus:twvac-outline-none dark:focus-visible:twvac-text-pink-300 dark:focus-visible:twvac-bg-pink-400 focus-visible:twvac-text-pink-600 focus-visible:twvac-bg-pink-700 focus-visible:twvac-bg-opacity-15',
     ]"
   >
     <slot />

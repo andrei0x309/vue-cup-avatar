@@ -21,8 +21,8 @@ const settings = computed(() => ({
 </script>
 
 <template>
-	<div class="flex flex-col items-center justify-center flex-grow w-full px-4 mt-4 md:mt-0">
-		<div class="relative w-full h-full rounded-lg overflow-hidden">
+	<div class="twvac-flex twvac-flex-col twvac-items-center twvac-justify-center twvac-flex-grow twvac-w-full twvac-px-4 twvac-mt-4 md:twvac-mt-0">
+		<div class="twvac-relative twvac-w-full twvac-h-full twvac-rounded-lg twvac-overflow-hidden twvac-max-h-[80vh]">
 			<cropper
 				v-if="state.source && !state.loading"
 				ref="element"
@@ -30,7 +30,7 @@ const settings = computed(() => ({
 				:debounce="false"
 				:stencil-component="stencil"
 				:stencil-props="settings"
-				image-class="select-none rounded-lg absolute origin-center !max-w-none overflow-hidden opacity-20 transition-opacity"
+				image-class="twvac-select-none twvac-rounded-lg twvac-absolute twvac-origin-center !twvac-max-w-none twvac-overflow-hidden twvac-opacity-20 twvac-transition-opacity"
 				image-restriction="none"
 				@change="change"
 				@error="error"
@@ -39,28 +39,28 @@ const settings = computed(() => ({
 			<transition-root
 				:show="state.loading"
 				as="div"
-				class="absolute inset-0 items-center justify-center flex"
-				enter="transition ease-out duration-300"
-				enter-from="opacity-0"
-				enter-to="opacity-100"
-				leave="transition ease-in duration-200"
-				leave-from="opacity-100"
-				leave-to="opacity-0"
+				class="twvac-absolute twvac-inset-0 twvac-items-center twvac-justify-center twvac-flex"
+				enter="twvac-transition twvac-ease-out twvac-duration-300"
+				enter-from="twvac-opacity-0"
+				enter-to="twvac-opacity-100"
+				leave="twvac-transition twvac-ease-in twvac-duration-200"
+				leave-from="twvac-opacity-100"
+				leave-to="twvac-opacity-0"
 			>
-				<icon class="w-20 h-20 opacity-5 text-white animate-spin" style="animation-duration: 3s" name="mdi:cog-clockwise" />
+				<icon class="twvac-w-20 twvac-h-20 twvac-opacity-5 twvac-text-white twvac-animate-spin" style="animation-duration: 3s" name="mdi:cog-clockwise" />
 			</transition-root>
 		</div>
 
 		<transition-root
 			:show="!state.loading"
 			as="div"
-			class="flex items-center justify-center gap-3 m-8"
-			enter="transition ease-out duration-300"
-			enter-from="opacity-0"
-			enter-to="opacity-100"
-			leave="transition ease-in duration-200"
-			leave-from="opacity-100"
-			leave-to="opacity-0"
+			class="twvac-flex twvac-items-center twvac-justify-center twvac-gap-3 twvac-m-8"
+			enter="twvac-transition twvac-ease-out twvac-duration-300"
+			enter-from="twvac-opacity-0"
+			enter-to="twvac-opacity-100"
+			leave="twvac-transition twvac-ease-in twvac-duration-200"
+			leave-from="twvac-opacity-100"
+			leave-to="twvac-opacity-0"
 		>
 			<preview
 				v-for="({ size, status }, i) in previews"
